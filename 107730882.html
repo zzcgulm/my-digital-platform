@@ -32,58 +32,105 @@
         <div class="l-centre-offset">
           <div class="row">
             <div class="col span-8">
-              <section class="service-usage" style="margin-top: 100px;">
+              <section class="service-usage-section">
                 <h3>Service usage</h3>
-                <h4>Information</h4>
-                <dl>
-                  <dt>Included</dt>
-                  <dd>Part of your core Jisc offer</dd>
-                  <dt>Open</dt>
-                  <dd>Available to all</dd>
-                  <dt>Optional</dt>
-                  <dd>Additionally purchased</dd>
-                  <dt>[Tick]</dt>
-                  <dd>Service is used</dd>
-                  <dt>[Mutliply]</dt>
-                  <dd>Service is not used</dd>
-                  <dt>[Question mark]</dt>
-                  <dd>Insufficient data available</dd>
-                </dl>
-                <table class="content-table" id="tech-companies">
+                <h4>Information [would "Key" be better?]</h4>
+                <div class="service-usage-key">
+                  <dl class="usage-key">
+                    <dt>Included</dt>
+                    <dd>Part of your core Jisc offer</dd>
+                    <dt>Open</dt>
+                    <dd>Available to all</dd>
+                    <dt>Optional</dt>
+                    <dd>Additionally purchased</dd>
+                  </dl>
+                  <dl class="usage-key usage-key--has-icon">
+                    <dt>
+                      <span class="is-used">
+                        <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span>
+                      </span>
+                    </dt>
+                    <dd>Service is used</dd>
+                    <dt>
+                      <span class="is-used">
+                        <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span>
+                      </span>
+                    </dt>
+                    <dd>Service is not used</dd>
+                    <dt>[Question mark]<span class="visuallyhidden">Insufficient data available</span></dt>
+                    <dd>Insufficient data available</dd>
+                  </dl>
+                </div>
+                <table class="content-table">
                   <thead>
-                    <th scope="col" class="persist essential">Portfolio</th>
-                    <th scope="col" class="essential">Service</th>
-                    <th scope="col" class="essential">Usage</th>
+                    <th scope="col" class="essential persist">Portfolio</th>
+                    <th scope="col" class="essential persist">Service</th>
+                    <th scope="col" class="essential persist">Usage</th>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row" rowspan="7">Library support services</th>
                       <td>Journal usage statistics portal</td>
-                      <td>Included</td>
+                      <td class="service-usage">
+                        <span class="is-used">
+                          <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
+                          Included
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td>Institutional repository usage statistics uk</td>
-                      <td>Included</td>
+                      <td class="service-usage">
+                        <span class="is-used">
+                          <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
+                          Included
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td>Jisc collections</td>
-                      <td>Included</td>
+                      <td class="service-usage">
+                        <span class="is-used">
+                          <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
+                          Included
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td>Knowledge base+</td>
-                      <td>Included</td>
+                      <td class="service-usage">
+                        <span class="is-used">
+                          <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
+                          Included
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td><abbr title="Open Uniform Resource Locator">OpenURL</abbr> router</td>
-                      <td>Included</td>
+                      <td class="service-usage">
+                        <span class="is-used">
+                          <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
+                          Included
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td>The keepers registry</td>
-                      <td>Included</td>
+                      <td class="service-usage">
+                        <span class="is-not-used">
+                          <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
+                          Open
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td>UK <abbr title="Lots Of Copies Keep Stuff Safe">LOCKSS</abbr> Alliance</td>
-                      <td>Included</td>
+                      <td class="service-usage">
+                        <span class="is-not-used">
+                          <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
+                          Optional
+                        </span>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
