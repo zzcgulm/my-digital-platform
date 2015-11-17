@@ -6,6 +6,22 @@
   padding: 2rem 3rem;  
 }
 
+.generic-table-wrap {
+  position: relative;
+  margin: 27px 0;
+  margin: 2.7rem 0;
+}
+
 /* ==========================================================================
    *Service usage
    ========================================================================== */
+.service-usage__usage-key {
+  color: #898989;
+}
+.service-usage__usage-key--is-used {
+  color: #3c763d;
+}
+.service-usage__usage-data {
+  /* Magic number set on the width of the longest content possible in this table cell. */
+  min-width: 5.33333333em;
+}
