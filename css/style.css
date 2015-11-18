@@ -6,20 +6,6 @@
   padding: 2rem 3rem;  
 }
 
-.basic-table {
-  margin: 27px 0;
-  margin:2.7rem 0;
-}
-.basic-table__td--service-usage {
-  /* Magic number set on the width of the longest content possible in this table cell. */
-  min-width: 5.33333333em;
-  color: #898989;
-}
-.basic-table__td--service-used {
-  /* Magic number set on the width of the longest content possible in this table cell. */
-  color: #3c763d;
-}
-
 /* ==========================================================================
    *Service usage
    ========================================================================== */
