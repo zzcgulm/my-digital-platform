@@ -9,3 +9,11 @@
 /* ==========================================================================
    *Service usage
    ========================================================================== */
+.content-table__service-usage-data {
+  /* Magic number set on the width of the longest content possible in this table cell. */
+  min-width: 5.33333333em;
+  color: #898989;
+}
+.content-table__service-usage-data--is-used {
+  color: #3c763d;
+}
