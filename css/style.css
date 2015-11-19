@@ -9,6 +9,14 @@
 /* ==========================================================================
    *Service usage
    ========================================================================== */
+.legend-service-usage {
+  color: #898989;
+}
+.legend-service-usage--is-used {
+  color: #3c763d;
+}
+
+
 .content-table__service-usage-data {
   /* Magic number set on the width of the longest content possible in this table cell. */
   min-width: 5.33333333em;
