@@ -7,6 +7,30 @@
   padding: 2rem 3rem;  
 }
 
+/* ==========================================================================
+   *Tables
+   ========================================================================== */
+.table-wrap--service-usage-table {
+  margin-top: 27px;
+  margin-top: 2.7rem;
+}
+.content-table__service-usage-data {
+  /* #868686 is the lightest colour with a luminosity contrast raio of >=3:1 on the darkest background used (#e4eaec). */
+  color: #868686;
+}
+@media screen and (min-width: 565px) {
+.content-table__service-usage-data {
+    /* Magic number set on the width of the longest content possible in this table cell (79px, +1=80px =5.33333333em at 15px). */
+    min-width: 5.33333333em;
+  }
+}
+.content-table__service-usage-data--service-is-used {
+  color: #3c763d;
+}
+
+/* ==========================================================================
+   *Information caption, legend and key
+   ========================================================================== */
 .information-legend {
   line-height: 20px;
   line-height: 2rem;
@@ -14,11 +38,11 @@
   font-size: 15px;
   font-size: 1.5rem;
 }
-.information-legend__key {
+.information-legend__key-description {
   color: #666;
 }
-@media screen and (min-width: 758px) {
-  .information-legend__key-title {
+@media screen and (min-width: 757px) {
+  .information-legend__key {
     clear: left;
     float: left;
     overflow: hidden;
@@ -26,13 +50,14 @@
     white-space: nowrap;
     width: 75px;
   }
-  .information-legend__key-title--has-icon {
-    width: 25px;
+  .information-legend--key-is-icon .information-legend__key {
+    /* Assuming maximum width of icons to be 25px (=1.66666667em for a 15px parent). */ 
+    width: 1.66666667em;
   }
-  .information-legend__key {
+  .information-legend__key-description {
     margin-left: 90px;
   }
-  .information-legend__key--has-icon {
+  .information-legend--key-is-icon .information-legend__key-description {
     margin-left: 40px;
   }
 }
@@ -40,20 +65,9 @@
 /* ==========================================================================
    *Service usage
    ========================================================================== */
-.service-usage-legend {
+.service-usage-table-information-legend__key {
   color: #868686;
 }
-.service-usage-legend--is-used {
-  color: #3c763d;
-}
-
-.content-table__service-usage-data {
-  margin-top: 27px;
-  margin-top: 2.7rem;
-  /* Magic number set on the width of the longest content possible in this table cell. */
-  min-width: 5.33333333em;
-  color: #868686;
-}
-.content-table__service-usage-data--is-used {
+.service-usage-table-information-legend__key--service-is-used {
   color: #3c763d;
 }
