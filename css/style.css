@@ -1,6 +1,7 @@
 .generic-content-box {
   margin-top: 27px;
   margin-top: 2.7rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   padding: 20px 30px;
   padding: 2rem 3rem;  
@@ -9,11 +10,12 @@
 .information-legend {
   line-height: 20px;
   line-height: 2rem;
+  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
   font-size: 1.5rem;
 }
-.information-legend__key-title {
-  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+.information-legend__key {
+  color: #666;
 }
 @media screen and (min-width: 758px) {
   .information-legend__key-title {
@@ -38,10 +40,10 @@
 /* ==========================================================================
    *Service usage
    ========================================================================== */
-.legend-service-usage {
-  color: #898989;
+.service-usage-legend {
+  color: #868686;
 }
-.legend-service-usage--is-used {
+.service-usage-legend--is-used {
   color: #3c763d;
 }
 
@@ -50,7 +52,7 @@
   margin-top: 2.7rem;
   /* Magic number set on the width of the longest content possible in this table cell. */
   min-width: 5.33333333em;
-  color: #898989;
+  color: #868686;
 }
 .content-table__service-usage-data--is-used {
   color: #3c763d;
