@@ -6,6 +6,35 @@
   padding: 2rem 3rem;  
 }
 
+.information-legend {
+  line-height: 20px;
+  line-height: 2rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+.information-legend__key-title {
+  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+}
+@media screen and (min-width: 758px) {
+  .information-legend__key-title {
+    clear: left;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75px;
+  }
+  .information-legend__key-title--has-icon {
+    width: 25px;
+  }
+  .information-legend__key {
+    margin-left: 90px;
+  }
+  .information-legend__key--has-icon {
+    margin-left: 40px;
+  }
+}
+
 /* ==========================================================================
    *Service usage
    ========================================================================== */
@@ -15,7 +44,6 @@
 .legend-service-usage--is-used {
   color: #3c763d;
 }
-
 
 .content-table__service-usage-data {
   /* Magic number set on the width of the longest content possible in this table cell. */
