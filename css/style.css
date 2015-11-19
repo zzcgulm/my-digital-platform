@@ -46,6 +46,8 @@
 }
 
 .content-table__service-usage-data {
+  margin-top: 27px;
+  margin-top: 2.7rem;
   /* Magic number set on the width of the longest content possible in this table cell. */
   min-width: 5.33333333em;
   color: #898989;
