@@ -71,3 +71,72 @@
 .service-usage-table-information-legend__key--service-is-used {
   color: #3c763d;
 }
+
+/* ==========================================================================
+   *Information metadata
+   ========================================================================== */
+.info-metadata {
+  margin-top: 21px;
+  margin-top: 2.1rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+.info-metadata--service-usage {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+.info-metadata__key {
+  display: block;
+}
+.info-metadata__value {
+  display: block;
+  color: #666;/* UX&D = $jTableColour */
+}
+@media screen and (min-width: 565px) {
+  .info-metadata__span12 .info-metadata__key,
+  .info-metadata__span8 .info-metadata__key {
+    clear: left;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75px;
+  }
+  .info-metadata__span12 .info-metadata__value,
+  .info-metadata__span8 .info-metadata__value {
+    margin-left: 90px;
+  }
+}
+@media screen and (min-width: 850px) {
+  .info-metadata__span4 .info-metadata__key {
+    clear: left;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75px;
+  }
+  .info-metadata__span4 .info-metadata__value {
+    margin-left: 90px;
+  }
+}
+
+.info-metadata-alt-version {
+  margin-top: 21px;
+  margin-top: 2.1rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+.info-metadata-alt-version__value {
+  color: #666;/* UX&D = $jTableColour */
+}
+.info-metadata-alt-version--service-usage {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
