@@ -1,2 +1,2 @@
 # my-digital-platform
-My standaloone version of Digital Platform
+My standalone version of Digital Platform
