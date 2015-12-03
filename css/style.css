@@ -75,6 +75,7 @@
 /* ==========================================================================
    *Information metadata
    ========================================================================== */
+/* Using a description list, or indeed a <p> with 2 <spans> - this is my preferred way as it alows a stack of key value pairs in a list, always lining up the left-hand side of the value as the keys are a set width */
 .info-metadata {
   margin-top: 21px;
   margin-top: 2.1rem;
@@ -95,7 +96,8 @@
   display: block;
   color: #666;/* UX&D = $jTableColour */
 }
-@media screen and (min-width: 565px) {
+/* Keep the layout looking good across the responsive layout in UX&D */
+@media screen and (min-width: 465px) {
   .info-metadata__span12 .info-metadata__key,
   .info-metadata__span8 .info-metadata__key {
     clear: left;
@@ -110,7 +112,8 @@
     margin-left: 90px;
   }
 }
-@media screen and (min-width: 850px) {
+/* Again, these 2 @media rules are to keep the layout looking good for .span-4 across the responsive layout in UX&D */
+@media screen and (min-width: 465px) and (max-width: 756px)  {
   .info-metadata__span4 .info-metadata__key {
     clear: left;
     float: left;
@@ -123,7 +126,34 @@
     margin-left: 90px;
   }
 }
+@media screen and (min-width: 950px) {
+  .info-metadata__span4 .info-metadata__key {
+    clear: left;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75px;
+  }
+  .info-metadata__span4 .info-metadata__value {
+    margin-left: 90px;
+  }
+}
+/* Override mobile-first responsive rules for IE8 and below, as they do not support media queries, so can't cope with mobile-first responsive design */
+.lt-ie9 .info-metadata .info-metadata__key {
+  clear: left;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 75px;
+}
+.lt-ie9 .info-metadata .info-metadata__value {
+  margin-left: 90px;
+}
 
+
+/* Alternative version, without a description list, where the values aren't lined up on the left-hand side, as the keys are the length of their content - does not snap to 2 lines at smaller viewports */
 .info-metadata-alt-version {
   margin-top: 21px;
   margin-top: 2.1rem;
