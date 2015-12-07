@@ -77,6 +77,8 @@
    ========================================================================== */
 /* Using a description list, or indeed a <p> with 2 <spans> - this is my preferred way as it allows a stack of key value pairs in a list, always lining up the left-hand side of the value as the keys are a set width */
 /* -------------------------------------------------------------------------- */
+/* <dl> responsive version */
+/* .......................................................................... */
 .date-metadata {
   margin-top: 21px;
   margin-top: 2.1rem;
@@ -98,8 +100,6 @@
   color: #666;/* UX&D = $jTableColour */
 }
 
-/* If you don't want any responsiveness then you won't need the these @media queries or lt-ie9 classes: */
-/* .......................................................................... */
 /* Keep the layout looking good across the responsive layout in UX&D */
 @media screen and (min-width: 465px) {
   .date-metadata__span12 .date-metadata__key,
@@ -116,7 +116,8 @@
     margin-left: 90px;
   }
 }
-/* Again, these 2 @media rules are to keep the layout looking good for .span-4 across the responsive layout in UX&D */
+
+/* Again, these 2 @media rules are to keep the layout looking good, for .span-4 across the responsive layout in UX&D */
 @media screen and (min-width: 465px) and (max-width: 756px)  {
   .date-metadata__span4 .date-metadata__key {
     clear: left;
@@ -143,6 +144,7 @@
     margin-left: 90px;
   }
 }
+
 /* Override mobile-first responsive rules for IE8 and below, as they do not support media queries, so can't cope with mobile-first responsive design */
 .lt-ie9 .date-metadata .date-metadata__key {
   clear: left;
@@ -156,6 +158,36 @@
   margin-left: 90px;
 }
 
+/* <dl> desktop version */
+/* .......................................................................... */
+/*.date-metadata {
+  margin-top: 21px;
+  margin-top: 2.1rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+.date-metadata--service-usage {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+}
+.date-metadata__key {
+  display: block;
+  clear: left;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 75px;
+}
+.date-metadata__value {
+  display: block;
+  margin-left: 90px;
+  color: #666;/* UX&D = $jTableColour *//*
+}
+*/
 /* Alternative version, without a description list, where the values aren't lined up on the left-hand side, as the keys are the length of their content - does not snap to 2 lines at smaller viewports */
 /* -------------------------------------------------------------------------- */
 .date-metadata-alt-version {
