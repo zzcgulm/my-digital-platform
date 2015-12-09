@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
     <meta content="on" http-equiv="cleartype">
-    <title>108774690 = On My Org, add flags when data is not real time</title>
+    <title>Dashboard page Reworking - Redesigned Contacts block </title>
     <link rel="shortcut icon" href="https://ux.jisc.ac.uk/1.1.0/favicon.ico">
     <!--[if IE]><![endif]-->
     <!--[if lte IE 8]>
@@ -24,6 +24,42 @@
     <!--<![endif]-->
     <link rel="stylesheet" href="css/style.css">
     <style>
+.person-contact-list {
+  margin-top: 10px;
+  margin-top: 1rem;
+  line-height: 27px;
+  line-height: 2.7rem;
+}
+.person-contact-details {
+  margin-bottom: 7px;
+  margin-bottom: .7rem;
+  border-top: 1px solid #d5dee2;
+  padding-top: 10px;
+  padding-top: 1rem;
+}
+.person-contact-details__key {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.person-contact-details__value {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+.person-contact-details__value--name {
+/*  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;*/
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.person-contact-details__value--email-address,
+.person-contact-details__value--telephone-number {
+  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+}
     </style>
     <script src="1.1.0/js/ux.jisc-1.1.0.script-head.min.js"></script>
   </head>
@@ -39,27 +75,39 @@
               <div class="l-gutter--left">
                 <div class="generic-content-box">
                   <h3>Organisation contacts</h3>
-                  <ul>
-                    <li>
+                  <ul class="person-contact-list">
+                    <li class="person-contact-list__item">
                       <dl class="person-contact-details">
                         <dt class="person-contact-details__key">Name</dt>
-                        <dd class="person-contact-details__value">Anthony Forster</dd>
+                        <dd class="person-contact-details__value person-contact-details__value--name">Anthony Forster</dd>
                         <dt class="person-contact-details__key">Job title</dt>
                         <dd class="person-contact-details__value">Vice-chancellor</dd>
                         <dt class="person-contact-details__key">Email address</dt>
-                        <dd class="person-contact-details__value--email-address"><a href="mailto:">vc@essex.ac.uk</a></dd>
+                        <dd class="person-contact-details__value person-contact-details__value--email-address"><a href="mailto:">vc@essex.ac.uk</a></dd>
                       </dl>
                     </li>
-                    <li>
+                    <li class="person-contact-list__item">
                       <dl class="person-contact-details">
                         <dt class="person-contact-details__key">Name</dt>
-                        <dd class="person-contact-details__value">Richard Murphy</dd>
+                        <dd class="person-contact-details__value person-contact-details__value--name">Richard Murphy</dd>
                         <dt class="person-contact-details__key">Job title</dt>
                         <dd class="person-contact-details__value">Director of IT Services</dd>
                         <dt class="person-contact-details__key">Email address</dt>
-                        <dd class="person-contact-details__value--email-address"><a href="mailto:">rmurphy@essex.ac.uk</a></dd>
+                        <dd class="person-contact-details__value person-contact-details__value--email-address"><a href="mailto:">rmurphy@essex.ac.uk</a></dd>
                         <dt class="person-contact-details__key">Telephone number</dt>
-                        <dd class="person-contact-details__value--email-address">01206 873455</dd>
+                        <dd class="person-contact-details__value person-contact-details__value--telephone-number">01206 873455</dd>
+                      </dl>
+                    </li>
+                    <li class="person-contact-list__item">
+                      <dl class="person-contact-details">
+                        <dt class="person-contact-details__key">Name</dt>
+                        <dd class="person-contact-details__value person-contact-details__value--name">Caroline Checkley</dd>
+                        <dt class="person-contact-details__key">Job title</dt>
+                        <dd class="person-contact-details__value">Assistant Librarian</dd>
+                        <dt class="person-contact-details__key">Email address</dt>
+                        <dd class="person-contact-details__value person-contact-details__value--email-address"><a href="mailto:">checkc@essex.ac.uk</a></dd>
+                        <dt class="person-contact-details__key">Telephone number</dt>
+                        <dd class="person-contact-details__value person-contact-details__value--telephone-number">01206 873181</dd>
                       </dl>
                     </li>
                   </ul>
