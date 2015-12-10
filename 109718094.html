@@ -12,18 +12,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
     <meta content="on" http-equiv="cleartype">
-    <title>Digital Platform template</title>
-    <link rel="shortcut icon" href="https://ux.jisc.ac.uk/1.1.0/favicon.ico">
+    <title>Dashboard page Reworking - Add BETA tag to Dashboard title</title>
+    <link rel="shortcut icon" href="https://ux.jisc.ac.uk/1.0.0/favicon.ico">
     <!--[if IE]><![endif]-->
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="1.1.0/css/ux.jisc-1.1.0.style-oldie.min.css" media="all" />
+    <link rel="stylesheet" href="1.0.0/css/ux.jisc-1.0.0.style-oldie.min.css" media="all" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <![endif]-->
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="1.1.0/css/ux.jisc-1.1.0.style.min.css" media="all">
+    <link rel="stylesheet" href="1.0.0/css/ux.jisc-1.0.0.style.min.css" media="all">
     <!--<![endif]-->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="1.1.0/js/ux.jisc-1.1.0.script-head.min.js"></script>
+    <style>
+ /* Added to stop :hover styles ocurring a tag that isn't a link */
+.tags--subtle span.tags__link:hover {
+  color: #00557f; }
+    </style>
+    <script src="1.0.0/js/ux.jisc-1.0.0.script-head.min.js"></script>
   </head>
   <body class="body-bare">
     <main id="main" role="main">
@@ -31,11 +35,22 @@
       <div class="inner l-pull-left">
         <div class="l-centre-offset">
           <div class="row">
-            <h1>Heading 1</h1>
+            <div class="col span-12">
+              <h1>
+                Dashboard
+                <span class="tags tags--subtle">
+                  <span class="tags__item">
+                    <span class="tags__link">
+                      Beta
+                    </span>
+                  </span>
+                </span>
+              </h1>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <script src="1.1.0/js/ux.jisc-1.1.0.script-foot.min.js"></script> 
+    <script src="1.0.0/js/ux.jisc-1.0.0.script-foot.min.js"></script> 
   </body>
 </html>

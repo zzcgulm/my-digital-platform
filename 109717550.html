@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8 ie7"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en-gb">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="on" http-equiv="cleartype">
+    <title>Dashboard page Reworking - Add 'take me back to..." notice panel</title>
+    <link rel="shortcut icon" href="https://ux.jisc.ac.uk/1.0.0/favicon.ico">
+    <!--[if IE]><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="1.0.0/css/ux.jisc-1.0.0.style-oldie.min.css" media="all" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="1.0.0/css/ux.jisc-1.0.0.style.min.css" media="all">
+    <!--<![endif]-->
+    <style>
+.box {
+  position: relative;
+  margin-bottom: 20px;
+  margin-bottom: 2rem ;
+  zoom: 1; }
+  .box:before, .box:after {
+    content: "";
+    display: table; }
+  .box:after {
+    clear: both; }
+  .box a {
+    word-break: normal; }
+  .box p a {
+    text-decoration: underline; }
+    .box p a:hover {
+      text-decoration: none; }
+
+.box--padding-large {
+  padding: 23px 30px;
+  padding: 2.3rem 3rem ; }
+  @media screen and (max-width: 757px) {
+    .box--padding-large {
+      padding: 20px;
+      padding: 2rem ; } }
+
+.box--brd-mgreyblue {
+  border: 2px solid #c4d1d7; }
+
+.box--bg-xlgreyblue {
+  background: #e4eaec; }
+
+/* Added by LM as missing from UX&D */.box__inner {
+  line-height: 27px;
+  line-height: 2.7rem;
+}
+
+    </style>
+    <script src="1.0.0/js/ux.jisc-1.0.0.script-head.min.js"></script>
+  </head>
+  <body class="body-bare">
+    <main id="main" role="main">
+    <!-- bare for home only -->
+      <div class="inner l-pull-left">
+        <div class="l-centre-offset">
+          <div class="row">
+            <div class="col span-12">
+              <section class="box box--padding-large box--brd-mgreyblue box--bg-xlgreyblue">
+                <div class="box__inner">
+                  <p>This part of our website is in beta so may not work perfectly - go to <a href=“”>jisc.ac.uk</a></p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="1.0.0/js/ux.jisc-1.0.0.script-foot.min.js"></script> 
+  </body>
+</html>
