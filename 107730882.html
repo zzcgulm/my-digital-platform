@@ -23,6 +23,66 @@
     <link rel="stylesheet" href="1.0.0/css/ux.jisc-1.0.0.style.min.css" media="all">
     <!--<![endif]-->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+/* ==========================================================================
+   *Tables
+   ========================================================================== */
+.table-wrap--service-usage-table {
+  margin-top: 27px;
+  margin-top: 2.7rem;
+}
+.content-table__service-usage-data {
+  /* This is a new colour: #868686 is the lightest colour with a luminosity contrast raio of >=3:1 on the darkest background used (#e4eaec). */
+  color: #868686;
+}
+.content-table__service-usage-data--service-is-used {
+  color: #3c763d;/* UX&D = $success-text */
+}
+
+/* ==========================================================================
+   *Information caption, legend and key
+   ========================================================================== */
+.information-legend {
+  line-height: 20px;
+  line-height: 2rem;
+  font-family: "Stag Sans Web Book", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+.information-legend__key-description {
+  color: #666;/* UX&D = $jTableColour */
+}
+@media screen and (min-width: 757px) {
+  .information-legend__key {
+    clear: left;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 75px;
+  }
+  .information-legend--key-is-icon .information-legend__key {
+    /* Assuming maximum width of icons to be 25px (=1.66666667em for a 15px parent). */ 
+    width: 1.66666667em;
+  }
+  .information-legend__key-description {
+    margin-left: 90px;
+  }
+  .information-legend--key-is-icon .information-legend__key-description {
+    margin-left: 40px;
+  }
+}
+
+/* ==========================================================================
+   *Service usage
+   ========================================================================== */
+.service-usage-table-information-legend__key {
+  color: #868686;
+}
+.service-usage-table-information-legend__key--service-is-used {
+  color: #3c763d;
+}
+    </style>
     <script src="1.0.0/js/ux.jisc-1.0.0.script-head.min.js"></script>
   </head>
   <body class="body-bare">
@@ -77,6 +137,7 @@
                         <tr>
                           <th scope="col">Portfolio</th>
                           <th scope="col">Service</th>
+                          <th scope="col">Offer</th>
                           <th scope="col">Usage</th>
                         </tr>
                       </thead>
@@ -84,87 +145,111 @@
                         <tr>
                           <th scope="row" rowspan="7">Library support services</th>
                           <td>Journal usage statistics portal</td>
+                          <td>
+                            Included
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Included
                           </td>
                         </tr>
                         <tr>
                           <td>Institutional repository usage statistics uk</td>
+                          <td>
+                            Included
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Included
                           </td>
                         </tr>
                         <tr>
                           <td>Jisc collections</td>
+                          <td>
+                            Included
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Included
                           </td>
                         </tr>
                         <tr>
                           <td>Knowledge base+</td>
                           <td class="content-table__service-usage-data">
-                            <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
                             Included
+                          </td>
+                          <td class="content-table__service-usage-data">
+                            <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
                           </td>
                         </tr>
                         <tr>
                           <td><abbr title="Open Uniform Resource Locator">OpenURL</abbr> router</td>
+                          <td>
+                            Optional
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Optional
                           </td>
                         </tr>
                         <tr>
                           <td>The keepers registry</td>
                           <td class="content-table__service-usage-data">
-                            <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
                             Open
+                          </td>
+                          <td class="content-table__service-usage-data">
+                            <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
                           </td>
                         </tr>
                         <tr>
                           <td>UK <abbr title="Lots Of Copies Keep Stuff Safe">LOCKSS</abbr> Alliance</td>
                           <td class="content-table__service-usage-data">
-                            <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
                             Optional
+                          </td>
+                          <td class="content-table__service-usage-data">
+                            <span class="icon-close icon"><span class="visuallyhidden">Service is not used</span></span> 
                           </td>
                         </tr>
                         <tr>
                           <th scope="row" rowspan="5">Open access support</th>
                           <td><abbr title="COnnecting REpositories">CORE</abbr></td>
+                          <td>
+                            Open
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Open
                           </td>
                         </tr>
                         <tr>
                           <td>Open<abbr title="Directory of Open Access Repositories">DOAR</abbr></td>
+                          <td>
+                            Open
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Open
                           </td>
                         </tr>
                         <tr>
                           <td>SHERPA JULIET</td>
+                          <td>
+                            Open
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Open
                           </td>
                         </tr>
                         <tr>
                           <td>SHERPA RoMEO</td>
+                          <td>
+                            Open
+                          </td>
                           <td class="content-table__service-usage-data content-table__service-usage-data--service-is-used">
                             <span class="icon-checkmark icon"><span class="visuallyhidden">Service is used</span></span> 
-                            Open
                           </td>
                         </tr>
                         <tr>
                           <td>SHERPA <abbr title="Funders and Authors Compliance Tool">FACT</abbr></td>
                           <td class="content-table__service-usage-data">
-                            [?]<span class="visuallyhidden">Insufficient data available</span> 
                             Open
+                          </td>
+                          <td class="content-table__service-usage-data">
+                            [?]<span class="visuallyhidden">Insufficient data available</span> 
                           </td>
                         </tr>
                       </tbody>
