@@ -21,3 +21,30 @@ h3 {
     font-size: 2.4rem;
   }
 }
+
+@media all and (max-width: 757px) {
+  .l-gutter--left {
+    margin-left: 20px; }
+  .l-gutter--right {
+    margin-right: 20px; }
+  .l-gutter--both {
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+main > .l-pull-left.featured.top-bar:first-child {
+  border-top-width: 2px;
+  border-color: #014161; }
+.featured .featured {
+  background-color: #e4e9ec;
+}
+
+.required-form-field {
+  color: #c00;
+}
+
+.terms-and-conditions {
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
