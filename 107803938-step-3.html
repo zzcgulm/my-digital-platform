@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
     <meta content="on" http-equiv="cleartype">
-    <title>Step 3: Terms and conditions &lt; Register &lt; Jisc</title>
+    <title>Step 3 of 3: Terms and conditions &lt; Register &lt; Jisc</title>
     <link rel="shortcut icon" href="https://ux.jisc.ac.uk/1.2.0/favicon.ico">
     <!--[if IE]><![endif]-->
     <!--[if lte IE 8]>
@@ -23,17 +23,15 @@
     <link rel="stylesheet" href="1.2.0/css/ux.jisc-1.2.0.style.min.css" media="all">
     <!--<![endif]-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/107803938.css">
     <script src="1.2.0/js/ux.jisc-1.2.0.script-head.min.js"></script>
   </head>
   <body class="body-bare">
-    <div class="inner">
-      <img src="https://idp.jisc.ac.uk/assets/img/jisc-logo-61.png" alt="Jisc" class="header__logo">
-    </div>
     <main id="main" role="main">
       <div class="inner l-pull-left featured top-bar">
         <div class="l-centre-offset">
           <div class="row">
-            <div class="col span-12">
+            <div class="col span-11">
               <div class="cms">
                 <h1>Register</h1>
               </div>
@@ -86,41 +84,40 @@
                         <li class="form-fields__item-checkbox">
                           <ul>
                             <li>
-                              <label>
+                              <label class="s-required-field">
                                 <input type="checkbox">
-                                I confirm I have read the Jisc terms and conditions
-                                <span class="required-form-field">*</span>
+                                I confirm I have read the Jisc terms and <span class="u-no-text-wrap">conditions <span class="s-required-field__indicator">*</span></span>
                               </label>
                             </li>
                             <li>
-                              <label>
+                              <label class="s-required-field">
                                 <input type="checkbox">
-                                I understand that Jisc will process and store information submitted in this form, including any updates, in accordance with the above terms and conditions
-                                <span class="required-form-field">*</span>
+                                I understand that Jisc will process and store information submitted in this form, including any updates, in accordance with the above terms and <span class="u-no-text-wrap">conditions <span class="s-required-field__indicator">*</span></span>
                               </label>
                             </li>
-                            <li>
+                            <li><!--
+                              <span class="form-fields__supporting-text">Maths <span class="u-no-text-wrap">question <span class="s-required-field__indicator">*</span></span>-->
                               <span class="form-fields__item--text">
-                                <label>
+                                <label class="s-required-field">
                                   <span class="form-fields__label-text">
-                                    Maths question
-                                    <span class="required-form-field">*</span>
+                                    11 + 4 =
                                   </span>
-                                  11 + 4 = <input type="text" class="input--small">
+                                  <input type="text" class="input--small">
                                 </label>
                               </span>
                             </li>
                           </ul>
                         </li>
                       </ul>
-                      <div>
-                        <button class="btn btn--3d btn--primary">
-                          <span class="icon icon-chevron-left"></span>
-                          Previous
-                        </button>
-                        <a href="/...">Cancel</a>
-                        <button class="btn btn--3d btn--primary">Finish</button>
-                      </div>
+                      <p class="wizard-btn-wrap cf">
+                        <span class="wizard-btn-wrap__left">
+                          <button class="btn btn--3d btn--primary">Previous</button>
+                        </span>
+                        <span class="wizard-btn-wrap__right">
+                          <a href="/...">Cancel</a>
+                          <button class="btn btn--3d btn--primary">Finish</button>
+                        </span>
+                      </p>
                     </form>
                   </div>
                 </div>

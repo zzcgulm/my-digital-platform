@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
     <meta content="on" http-equiv="cleartype">
-    <title>Step 1: Organisation details &lt; Register &lt; Jisc</title>
+    <title>Step 1 of 3: Organisation details &lt; Register &lt; Jisc</title>
     <link rel="shortcut icon" href="https://ux.jisc.ac.uk/1.2.0/favicon.ico">
     <!--[if IE]><![endif]-->
     <!--[if lte IE 8]>
@@ -23,17 +23,15 @@
     <link rel="stylesheet" href="1.2.0/css/ux.jisc-1.2.0.style.min.css" media="all">
     <!--<![endif]-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/107803938.css">
     <script src="1.2.0/js/ux.jisc-1.2.0.script-head.min.js"></script>
   </head>
   <body class="body-bare">
-    <div class="inner">
-      <img src="//ux.jisc.ac.uk/ui/img/jisc-logo.png" alt="Jisc" class="header__logo">
-    </div>
     <main id="main" role="main">
       <div class="inner l-pull-left featured top-bar">
         <div class="l-centre-offset">
           <div class="row">
-            <div class="col span-12">
+            <div class="col span-11">
               <div class="cms">
                 <h1>Register</h1>
               </div>
@@ -41,21 +39,27 @@
                 <div class="featured cf">
                   <div class="l-gutter--top l-gutter--both l-gutter--bottom">
                     <div class="cms">
-                      <h2>Organisation details (<span class="visuallyhidden">Step </span>1 of 3)</h2>
+                      <h2>Organisation details
+                        <span class="u-no-text-wrap">(<span class="visuallyhidden">Step </span>1 of 3)</span>
+                      </h2>
                     </div>
                     <form class="form">
                       <p class="form-fields__item--text">
-                        <label>
+                        <label class="s-required-field">
                           <span class="form-fields__label-text">
-                            Organisation name
-                            <span class="required-form-field">*</span>
+                            Organisation <span class="u-no-text-wrap">name
+                            <span class="s-required-field__indicator">*</span></span>
                           </span>
                           <input type="text" class="input--large">
-                          Start typing your organisation name and then select it from the list
+                          <span class="form-fields__supporting-text">Start typing your organisation name and then select it from the list</span>
                         </label>
                       </p>
-                      <a href="/...">Cancel</a>
-                      <button class="btn btn--3d btn--primary">Next</button>
+                      <p class="wizard-btn-wrap cf">
+                        <span class="wizard-btn-wrap__right">
+                          <a href="/...">Cancel</a>
+                          <button class="btn btn--3d btn--primary">Next</button>
+                        </span>
+                      </p>
                     </form>
                   </div>
                 </div>
