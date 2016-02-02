@@ -16,6 +16,11 @@ main > .l-pull-left.featured.top-bar:first-child {
   background-color: #e4e9ec;
 }
 
+/* Generics */
+a.logo:focus > img, a.logo:hover > img {
+  opacity: .7
+}
+
 /* Forms */
 .form-fields__supporting-text {
   display: block;
@@ -41,7 +46,6 @@ main > .l-pull-left.featured.top-bar:first-child {
 
 
 
-
 .terms-and-conditions {
   height: 300px;
   overflow-y: scroll;
@@ -49,3 +53,18 @@ main > .l-pull-left.featured.top-bar:first-child {
   margin-bottom: 15px;
   background-color: #f8fafa;
 }
+
+/* Masthead */
+.masthead--community-registration {
+  padding-bottom: 8px;
+}
+@media screen and (min-width: 950px) {
+  .masthead--community-registration {
+    padding-bottom: 30px;
+  }
+}
+.masthead__top--community-registration {
+  /* Override UX&D default .masthead__top background. */
+  background-color: inherit;
+}
+
