@@ -1,3 +1,6 @@
+/* ==========================================================================
+   *Utilities
+   ========================================================================== */
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -29,6 +32,13 @@
   white-space: nowrap;
 }
 
+/* ==========================================================================
+   *Generics
+   ========================================================================== */
+a.logo:focus > img, a.logo:hover > img {
+  opacity: .7
+}
+
 .generic-content-box {
   margin-top: 27px;
   margin-top: 2.7rem;
@@ -52,3 +62,80 @@ h3 {
     font-size: 2.4rem;
   }
 }
+
+/* ==========================================================================
+   *Grid
+   ========================================================================== */
+@media all and (max-width: 757px) {
+  .l-gutter--left {
+    margin-left: 20px; }
+  .l-gutter--right {
+    margin-right: 20px; }
+  .l-gutter--both {
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+/* ==========================================================================
+   *Layout containers
+   ========================================================================== */
+.main > .l-pull-left.featured.top-bar:first-child {
+  border-top-width: 2px;
+  border-color: #014161; }
+.featured .featured {
+  background-color: #e4e9ec;
+}
+
+/* ==========================================================================
+   *Masthead
+   ========================================================================== */
+.masthead--community-registration + .main, .lt-ie9 .masthead--community-registration .main {
+  margin-top: 0; }
+
+.masthead--community-registration {
+  padding-bottom: 8px;
+}
+@media screen and (min-width: 950px) {
+  .masthead--community-registration {
+    padding-bottom: 30px;
+  }
+}
+.masthead__top--community-registration {
+  /* Override UX&D default .masthead__top background. */
+  background-color: inherit;
+}
+
+/* ==========================================================================
+   *Forms
+   ========================================================================== */
+.form-fields__supporting-text {
+  display: block;
+  margin-top: 8px; }
+@media screen and (min-width: 630px) {
+  .form-fields__supporting-text {
+    margin-left: 22%;
+  }
+}
+
+.s-required-field__indicator {
+  color: #c00;
+}
+
+.wizard-btn-wrap__right {
+  float: right;
+}
+.wizard-btn-wrap__right > a:first-child {
+  margin-right: 15px;
+}
+
+
+
+
+
+.terms-and-conditions {
+  height: 300px;
+  overflow-y: scroll;
+  border: 2px solid #d5dee2;
+  margin-bottom: 15px;
+  background-color: #f8fafa;
+}
+
