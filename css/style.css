@@ -106,23 +106,22 @@ h3 {
 /* ==========================================================================
    *Forms
    ========================================================================== */
+input[type="text"].input--fixed-4-character {
+  width: 3em;
+}
+
+
 /* Check how hidden labels work! */
 
 
-.faux-label {
-  margin-top: .2em;  
-}
+
 @media screen and (min-width: 630px) {
-  .form-fields__faux-label .faux-input-container {
+  .faux-input-container--has-no-label {
+    display: inline-block;
     margin-left: 22%;
   }
 }
 
-input[type="text"].input--fixed-4-character {
-  width: 3em;
-}
-@media screen and (min-width: 630px) {
-}
 
 /*.form-fields .faux-input-container {background-color: green;
   width: 90%; }
