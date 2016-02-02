@@ -5,7 +5,7 @@
 <!--[if IE 8]><html class="lt-ie9 ie8"><![endif]-->
 <!--[if IE 9]><html class="ie9"><![endif]-->
 <!--[if gt IE 9]><!-->
-<html lang="en-gb">
+<html class="no-js" lang="en-gb">
 <!--<![endif]-->
   <head>
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="1.2.0/css/ux.jisc-1.2.0.style.min.css" media="all">
     <!--<![endif]-->
     <link rel="stylesheet" href="css/style.css">
-    <script src="1.2.0/js/ux.jisc-1.2.0.script-head.min.js"></script>
+    <script src="1.2.0/js/ux.jisc-1.2.0.script-head.js"></script>
   </head>
   <body class="body-bare">
     <header class="masthead masthead--community-registration" role="banner">
@@ -52,22 +52,24 @@
                       </h2>
                     </div>
                     <form class="form">
-                      <p class="form-fields__item--text">
-                        <label class="s-required-field">
-                          <span class="form-fields__label-text">
-                            Organisation <span class="u-no-text-wrap">name
-                            <span class="s-required-field__indicator">*</span></span>
+                      <ul class="form-fields">
+                        <li class="form-fields__item--text">
+                          <label class="s-required-field">
+                            <span class="form-fields__label-text">
+                              Organisation <span class="u-no-text-wrap">name
+                              <span class="s-required-field__indicator">*</span></span>
+                            </span>
+                            <input type="text" class="input--large">
+                            <span class="form-fields__supporting-text">Start typing your organisation name and then select it from the list</span>
+                          </label>
+                        </li>
+                        <li class="wizard-btn-wrap cf">
+                          <span class="wizard-btn-wrap__right">
+                            <a href="/...">Cancel</a>
+                            <button class="btn btn--3d btn--primary">Next</button>
                           </span>
-                          <input type="text" class="input--large">
-                          <span class="form-fields__supporting-text">Start typing your organisation name and then select it from the list</span>
-                        </label>
-                      </p>
-                      <p class="wizard-btn-wrap cf">
-                        <span class="wizard-btn-wrap__right">
-                          <a href="/...">Cancel</a>
-                          <button class="btn btn--3d btn--primary">Next</button>
-                        </span>
-                      </p>
+                        </li>
+                      </ul>
                     </form>
                   </div>
                 </div>
@@ -77,6 +79,6 @@
         </div>
       </div>
     </main>
-    <script src="1.2.0/js/ux.jisc-1.2.0.script-foot.min.js"></script> 
+    <script src="1.2.0/js/ux.jisc-1.2.0.script-foot.js"></script> 
   </body>
 </html>
