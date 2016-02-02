@@ -139,3 +139,9 @@ h3 {
   background-color: #f8fafa;
 }
 
+/* ==========================================================================
+   *Community registration
+   ========================================================================== */
+.cms .community-registration-page-title {
+  margin-top: 2.7rem;
+}
