@@ -121,13 +121,6 @@ input[type="text"].input--fixed-4-character {
   width: 3em;
 }
 
-
-/* Check how hidden labels work! */
-
-
-
-
-
 /* Generic left/right containers. */
 .form-fields__item--generic-container--has-input .form-fields__generic-left  {
   margin-top: 8px;
@@ -148,33 +141,6 @@ input[type="text"].input--fixed-4-character {
   }
 }
 
-
-
-
-
-
-/*.form-fields .faux-input-container {background-color: green;
-  width: 90%; }
-@media screen and (min-width: 630px) {
-  .form-fields .faux-input-container {
-    width: 36%; }
-}
-.faux-input-container--large {background-color: yellow;
-  width: 300px; }
-  @media screen and (max-width: 565px) {
-    .faux-input-container--large {
-      width: 100%;
-      box-sizing: border-box; } }
-*/
-
-
-
-
-
-
-
-
-
 /* Instructions text for form field: should follow input in HTML source. */
 .form-fields__field-instructions {
   display: block;
@@ -185,14 +151,10 @@ input[type="text"].input--fixed-4-character {
   }
 }
 
-
-
-
-
+/* Required fields */
 .s-required-field__indicator {
   color: #c00;
 }
-
 
 /* Wizard-specific button grouping. */
 .wizard-btn-wrap:before,
@@ -221,13 +183,12 @@ input[type="text"].input--fixed-4-character {
   margin-left: 15px;
 }
 
-
-
-
+/* Maths question: styling outside of normal form behaviour, else it doesn't look right. */
 .maths-question__label-parent {
   margin-right: 15px;
 }
 
+/* Terms and conditions. */
 .terms-and-conditions {
   height: 300px;
   overflow-y: scroll;
