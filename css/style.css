@@ -181,6 +181,31 @@ input[type="text"].input--fixed-4-character {
 }
 
 
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt,
+dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+.fl3, .fic3 {
+  display: block;
+}
+/*@media (min-width: 630px) {*/
+  .ff__ific3 .fl3 {
+    float: left;
+    width: 20%;
+    clear: left;
+    text-align: right;
+  }
+  .ff__ific3 .fic3 {
+    margin-left: 22%;
+  }
+/*}*/
 
 
 
