@@ -28,6 +28,10 @@
     *zoom: 1;
 }
 
+.no-js .requires-js {
+  display: none !important;
+}
+
 .u-no-text-wrap {
   white-space: nowrap;
 }
@@ -149,7 +153,7 @@ input[type="text"].input--fixed-4-character {
 
 
 
-.form-fields__supporting-text {
+.form-fields__field-instructions {
   display: block;
   margin-top: 8px; }
 @media screen and (min-width: 630px) {
