@@ -1,6 +1,7 @@
 /* ==========================================================================
    *Utilities
    ========================================================================== */
+/* Clearfix: contain floats. */
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -19,7 +20,6 @@
 .cf:after {
     clear: both;
 }
-
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
@@ -28,10 +28,12 @@
     *zoom: 1;
 }
 
+/* Hide JS-powered functionality for browsers that do not support JS. */
 .no-js .requires-js {
   display: none !important;
 }
 
+/* Stop text breaking when that is undesirable. */
 .u-no-text-wrap {
   white-space: nowrap;
 }
@@ -70,6 +72,7 @@ h3 {
 /* ==========================================================================
    *Grid
    ========================================================================== */
+/* Add left and right gutters to viewports missign them, else layouts don't work correctly. */
 @media all and (max-width: 757px) {
   .l-gutter--left {
     margin-left: 20px; }
@@ -82,9 +85,12 @@ h3 {
 /* ==========================================================================
    *Layout containers
    ========================================================================== */
+/* Add top bar to more layouts. */
 .main > .l-pull-left.featured.top-bar:first-child {
   border-top-width: 2px;
   border-color: #014161; }
+
+/* Add background colour to featured area within featured areas. */
 .featured .featured {
   background-color: #e4e9ec;
 }
@@ -110,6 +116,7 @@ h3 {
 /* ==========================================================================
    *Forms
    ========================================================================== */
+/* Add a fixed-width input for text inpuots that only accept ~3 characters, as inputs should give an indication on the length of data that is to be entered into them. */
 input[type="text"].input--fixed-4-character {
   width: 3em;
 }
@@ -152,7 +159,7 @@ input[type="text"].input--fixed-4-character {
 
 
 
-
+/* Instructions text for form field: should follow input in HTML source. */
 .form-fields__field-instructions {
   display: block;
   margin-top: 8px; }
@@ -161,6 +168,10 @@ input[type="text"].input--fixed-4-character {
     margin-left: 22%;
   }
 }
+
+
+
+
 
 .s-required-field__indicator {
   color: #c00;
@@ -195,15 +206,15 @@ input[type="text"].input--fixed-4-character {
 }
 
 /* Hide password strength indicator if browser does not support JS - as it relies on JS to work. */
-.no-js .password-strength-indicator {
+/*.no-js .password-strength-indicator {
   display: none;
 }
-/*.password-strength {
+.password-strength {
     float: right;
     margin-top: 1.4em;
     width: 17em;
 }
-*/.password-indicator {
+.password-indicator {
   display: block;
   height: 1em;
   width: 100%;
@@ -214,3 +225,4 @@ input[type="text"].input--fixed-4-character {
   width: 0;
   background-color: #47c965;
 }
+*/
