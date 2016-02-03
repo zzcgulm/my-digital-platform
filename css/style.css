@@ -114,6 +114,9 @@ input[type="text"].input--fixed-4-character {
 /* Check how hidden labels work! */
 
 
+/* Visuallyhidden form required text! */
+
+
 
 @media screen and (min-width: 630px) {
   .faux-input-container--has-no-label {
