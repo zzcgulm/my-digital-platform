@@ -123,99 +123,34 @@ input[type="text"].input--fixed-4-character {
 
 
 /* Check how hidden labels work! */
-.ff__ific {
-}
 
-.fl {
+
+
+
+
+/* Generic left/right containers. */
+.form-fields__item--generic-container--has-input .form-fields__generic-left  {
+  margin-top: 8px;
+  margin-top: .8rem;
+}
+.form-fields__generic-left, .form-fields__generic-right {
   display: block;
 }
-@media screen and (min-width: 630px) {
-  .fl {
-    float: left;
-    width: 20%;
-    text-align: right;
-    margin-right: 2%;
-  /*  padding-top: 5px;*/
-  }
-}
-
-.fic {
-  display: block;
-}
-@media screen and (min-width: 630px) {
-  .fic {
-    display: inline-block;
-    margin-left: 0px;
-  }
-}
-
-@media screen and (min-width: 630px) {
-  .ff__ific2 {
-    zoom: 1;
-    padding: 10px 0 0; }
-    .ff__ific2:before, .ff__ific2:after {
-      content: "";
-      display: table; }
-    .ff__ific2:after {
-      clear: both; }
-
-  .fl2 {
-    zoom: 1;
-    float: left;
-    width: 20%;
-    margin-right: 2%;
-    text-align: right;}
-    .fl2:before, .fl2:after {
-      content: "";
-      display: table; }
-    .fl2:after {
-      clear: both; }
-    .fl2 .fl2__ {
-      display: block;
-       }
-
-  .fic2 {
-    overflow: hidden; 
-    display: block;
-  }
-}
-
-
-dl {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-dt,
-dd {
-  line-height: 1.42857143;
-}
-dt {
-  font-weight: bold;
-}
-.fl3, .fic3 {
-  display: block;
-}
-/*@media (min-width: 630px) {*/
-  .ff__ific3 .fl3 {
+@media (min-width: 630px) {
+  .form-fields__item--generic-container .form-fields__generic-left {
     float: left;
     width: 20%;
     clear: left;
     text-align: right;
   }
-  .ff__ific3 .fic3 {
-    margin-left: 22%;
-  }
-/*}*/
-
-
-
-
-@media screen and (min-width: 630px) {
-  .faux-input-container--has-no-label {
-    display: inline-block;
+  .form-fields__item--generic-container .form-fields__generic-right {
     margin-left: 22%;
   }
 }
+
+
+
+
 
 
 /*.form-fields .faux-input-container {background-color: green;
