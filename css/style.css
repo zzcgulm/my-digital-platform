@@ -214,8 +214,6 @@ input[type="text"].input--fixed-4-character {
   width: 90%;
   /* Use UX&D form border colour. */border: 2px solid #d5dee2;
   /* Use UX&D form border colour. */background-color: #d5dee2;
-  /* Use UX&D success colour. */border-color: #3c763d;
-  /* Use UX&D success colour. */background-color: #3c763d;
   padding: 4px;
 }
 @media screen and (min-width: 565px) {
