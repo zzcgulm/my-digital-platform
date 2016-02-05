@@ -204,24 +204,32 @@ input[type="text"].input--fixed-4-character {
   margin-top: 2.7rem;
 }
 
-/* Hide password strength indicator if browser does not support JS - as it relies on JS to work. */
-/*.no-js .password-strength-indicator {
-  display: none;
+/* Password strength indicator. */
+.form-fields .password-strength__indicator {
+  width: 90%;
+  /* Use UX&D form border colour. */border: 2px solid #d5dee2;
+  /* Use UX&D form border colour. */background-color: #d5dee2;
+  /* Use UX&D success colour. */border-color: #3c763d;
+  /* Use UX&D success colour. */background-color: #3c763d;
+  padding: 4px;
 }
-.password-strength {
-    float: right;
-    margin-top: 1.4em;
-    width: 17em;
+@media screen and (min-width: 565px) {
+  .form-fields .password-strength__indicator {
+    width: 280px;
+  }
 }
-.password-indicator {
-  display: block;
-  height: 1em;
-  width: 100%;
-  background-color: #c4c4c4;
+@media screen and (min-width: 630px) {
+  .form-fields .password-strength__indicator {
+    width: 46.1538462%;
+  }
 }
-.indicator {
-  height: 100%;
+  @media screen and (max-width: 565px) {
+    .password-strength__indicator--large {
+      box-sizing: border-box; } }
+
+.password-strength__indicator > div {
   width: 0;
-  background-color: #47c965;
+  height: 1em;
+  /* Use UX&D success colour. */border-color: #3c763d;
+  /* Use UX&D success colour. */background-color: #3c763d;
 }
-*/
