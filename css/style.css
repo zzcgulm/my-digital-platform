@@ -41,6 +41,7 @@
 /* ==========================================================================
    *Generics
    ========================================================================== */
+/* Jisc logo focus/hover state. */
 a.logo:focus > img, a.logo:hover > img {
   opacity: .7
 }
@@ -169,18 +170,24 @@ input[type="text"].input--fixed-4-character {
   *zoom: 1;
   margin: 30px 0 20px;
   margin: 3rem 0 2rem;
-}
-.wizard-btn-wrap__left {
-  float: left;
-}
-.wizard-btn-wrap__right {
-  float: right;
+  text-align: center;
 }
 .wizard-btn-wrap__left > a, .wizard-btn-wrap__left > .btn {
   margin-right: 15px;
 }
 .wizard-btn-wrap__right > a, .wizard-btn-wrap__right > .btn {
   margin-left: 15px;
+}
+.wizard-btn-wrap__right > a:first-child, .wizard-btn-wrap__right > .btn:first-child {
+  margin-left: 0;
+}
+@media screen and (min-width: 465px) {
+  .wizard-btn-wrap__left {
+    float: left;
+  }
+  .wizard-btn-wrap__right {
+    float: right;
+  }
 }
 
 /* Maths question: styling outside of normal form behaviour, else it doesn't look right. */
