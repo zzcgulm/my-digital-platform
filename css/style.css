@@ -73,15 +73,14 @@ h3 {
 /* ==========================================================================
    *Grid
    ========================================================================== */
-/* Add left and right gutters to viewports missign them, else layouts don't work correctly. */
-@media all and (max-width: 757px) {
+/* Add left and right gutters to viewports missing them, else layouts don't work correctly. */
   .l-gutter--left {
     margin-left: 20px; }
   .l-gutter--right {
     margin-right: 20px; }
   .l-gutter--both {
     margin-left: 20px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
 
 /* ==========================================================================
    *Layout containers
@@ -91,7 +90,11 @@ h3 {
   border-top-width: 2px;
   border-color: #014161; }
 
-/* Add background colour to featured area within featured areas. */
+/* Add background colour to get hang-left layout to work in IE8 - copying a UX&D fudge that needs to die. */
+.lt-ie9 .ie8-pull-left-layout-fudge>.inner{position:relative}
+.lt-ie9 .ie8-pull-left-layout-fudge>.inner:before{display:block;content:'';width:100%;height:100%;left:-100%;background:#fff;position:absolute;top:0;bottom:0;z-index:-1}
+
+/* Add background colour to featured area within featured area. */
 .featured .featured {
   background-color: #e4e9ec;
 }
@@ -109,6 +112,9 @@ h3 {
   .masthead--community-registration {
     padding-bottom: 30px;
   }
+}
+.lt-ie9 .masthead--community-registration {
+  padding-bottom: 30px;
 }
 .masthead__top--community-registration {
   /* Override UX&D default .masthead__top background. */background-color: inherit;
@@ -141,6 +147,15 @@ input[type="text"].input--fixed-4-character {
     margin-left: 22%;
   }
 }
+.lt-ie9 .form-fields__item--generic-container .form-fields__generic-left {
+  float: left;
+  width: 20%;
+  clear: left;
+  text-align: right;
+}
+.lt-ie9 .form-fields__item--generic-container .form-fields__generic-right {
+  margin-left: 22%;
+}
 
 /* Instructions text for form field: should follow input in HTML source. */
 .form-fields__field-instructions {
@@ -150,6 +165,9 @@ input[type="text"].input--fixed-4-character {
   .form-fields__field-instructions {
     margin-left: 22%;
   }
+}
+.lt-ie9 .form-fields__field-instructions {
+  margin-left: 22%;
 }
 
 /* Required fields */
@@ -206,6 +224,7 @@ input[type="text"].input--fixed-4-character {
    *Community registration
    ========================================================================== */
 .cms .community-registration-page-title {
+  margin-top: 27px;
   margin-top: 2.7rem;
 }
 
@@ -225,6 +244,9 @@ input[type="text"].input--fixed-4-character {
   .form-fields .password-strength__indicator {
     width: 46.1538462%;
   }
+}
+.lt-ie9 .form-fields .password-strength__indicator {
+  width: 46.1538462%;
 }
   @media screen and (max-width: 565px) {
     .password-strength__indicator--large {
