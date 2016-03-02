@@ -26,17 +26,40 @@
     <script src="1.2.0/js/ux.jisc-1.2.0.script-head.min.js"></script>
   </head>
   <body class="body-bare">
+    <h1>Dashboard</h1>
+    <ul>
+      <li>Who am I?</li>
+      <li><a href="...">Log out</a></li>
+    </ul>
+    <form class="box box--padding-large box--notice box--brd-mblue box--bg-white">
+      <p>
+        <label>
+          Change organisation: 
+          <input type="text">
+        </label>
+        <input class="btn btn--3d btn--primary" type="submit" value="Change">
+      </p>
+    </form>
+    <h2>Warwickshire College, Royal Leamington Spa, Rugby and Moreton Morrell</h2>
     <main role="main" class="main" id="main">
+      <p class="visuallyhidden">Sections available:</p>
+      <ul>
+        <li><a href="#my-organisation">My organisation</a></li>
+        <li><a href="#service-usage">Service usage</a></li>
+        <li><a href="#value-saving-efficiencies">Value saving efficiencies</a></li>
+      </ul>
       <div class="l-pull-left featured">
         <div class="inner">
           <div class="row">
             <div class="col span-12">
               <div class="l-gutter--top l-gutter--bottom">
-                <div class="cms">
-                  <h2>Janet network usage</h2>
-                  <h3>Janet traffic: Warwickshire College, Royal Leamington Spa, Rugby and Moreton Morrell</h3>
-                </div>
-                <!--Placeholder image for layout demo only: @Benj: How big is this visualisation going to be?--><img alt="" src="//placehold.it/940x940">
+                <article id="service-usage">
+                  <div class="cms">
+                    <h3>Janet network usage</h3>
+                    <h4>Janet traffic: Warwickshire College, Royal Leamington Spa, Rugby and Moreton Morrell</h4>
+                  </div>
+                  <!--Placeholder image for layout demo only: @Benj: How big is this visualisation going to be?--><img alt="" src="//placehold.it/940x940">
+                </article>
               </div>
             </div>
           </div>
